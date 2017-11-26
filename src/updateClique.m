@@ -39,7 +39,7 @@ for i = 1:length(potentialNodes)
     if(potentialNodes(i)==1)
         numMatches = 0;
         for j = 1:length(potentialNodes)
-            if (potentialNodes(j) & M(i,j))
+            if (potentialNodes(j) && M(i,j))
                 numMatches = numMatches + 1;
             end
         end

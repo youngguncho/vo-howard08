@@ -242,7 +242,7 @@ newCloud2(TF,:) = [];
 
 r = PAR(1:3);
 t = PAR(4:6);
-R = angle2dcm( r(1), r(2), r(3), 'ZXZ' );
+R = angle2dcm( [r(1), r(2), r(3)], 'ZXZ' );
 T = t;
 %F1, F2 -> 2d 
 outliers = sum(TF);

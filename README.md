@@ -1,3 +1,6 @@
+Modified version of original work [LINK](https://github.com/avisingh599/vo-howard08)
+
+--------------------------------------------------------------
 ##Stereo Visual Odometry
 
 This is a MATLAB-based implementation of Andrew Howard's 2008 paper:
@@ -12,7 +15,7 @@ are different. Also, since it is based on MATLAB, and not C/C++ like the origina
 it is not really "real time". In fact, each VO computation takes around 10-15 seconds.
 However, the core algorithm is the same.
 
-###Requirements: 
+###Requirements:
 
 MATLAB R2014a or newer, with the following toolbooxes:
 
@@ -21,9 +24,9 @@ MATLAB R2014a or newer, with the following toolbooxes:
 
 ###How to run?
 A file demo.m is provided which takes in the input images provided in the sample_data folder,
-and runs the algorithm on it. 
+and runs the algorithm on it.
 For a better test of the algorithm, it is suggested that you download KITTI's Visual Odometry
-dataset, and test the algorithm on their sequences. 
+dataset, and test the algorithm on their sequences.
 
 In order to run this algorithm on your own data, you must modify the intrinsic and extrinsic
 calibration parameter in the code.

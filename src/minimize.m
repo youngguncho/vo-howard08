@@ -34,7 +34,7 @@ F = zeros(2*size(F1,1), 3);
 reproj1 = zeros(size(F1,1), 3);
 reproj2 = zeros(size(F1,1), 3);
 
-dcm = angle2dcm( r(1), r(2), r(3), 'ZXZ' );
+dcm = angle2dcm( [r(1), r(2), r(3)], 'ZXZ' );
 tran = [ horzcat(dcm, t); [0 0 0 1]];
 
 for k = 1:size(F1,1)
